@@ -39,4 +39,9 @@ public class MenuController : MonoBehaviour
         posesMenu.SetActive(false);
         background.SetActive(false);
     }
+    public void OnPoseModelClick()
+    {
+        ShowPosesMenu();
+        background.SetActive(true);
+    }
 }

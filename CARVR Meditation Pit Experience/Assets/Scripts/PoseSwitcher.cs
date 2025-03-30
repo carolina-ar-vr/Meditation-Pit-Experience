@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PoseSwitcher : MonoBehaviour
@@ -20,12 +18,10 @@ public class PoseSwitcher : MonoBehaviour
         if (currentPose != null)
         {
             currentPose.SetActive(false);
-            Debug.Log("Deactivated pose: " + currentPose.name);
         }
 
         poseToActivate.SetActive(true);
         currentPose = poseToActivate;
-        Debug.Log("Activated pose: " + poseToActivate.name);
     }
 
     private void SetDefaultPose()
@@ -41,10 +37,5 @@ public class PoseSwitcher : MonoBehaviour
             defaultPose.SetActive(true);
             currentPose = defaultPose;
         }
-    }
-
-    public void TestButtonPress()
-    {
-        Debug.Log("Button Pressed!");
     }
 }
