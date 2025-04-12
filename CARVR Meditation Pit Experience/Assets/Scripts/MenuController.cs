@@ -34,10 +34,11 @@ public class MenuController : MonoBehaviour
 
     public void HideMenuAfterPoseSelection()
     {
-        mainMenu.SetActive(false);
-        settingsMenu.SetActive(false);
-        posesMenu.SetActive(false);
-        background.SetActive(false);
+        //Temporary Change, Disabled function
+        // mainMenu.SetActive(false);
+        // settingsMenu.SetActive(false);
+        // posesMenu.SetActive(false);
+        // background.SetActive(false);
     }
     public void OnPoseModelClick()
     {
